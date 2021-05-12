@@ -14,7 +14,7 @@ class PetSerializer(serializers.Serializer):
     height = serializers.CharField()
     length = serializers.IntegerField()
     sellerId = serializers.IntegerField()
-    sllerName = serializers.CharField()
+    sellerName = serializers.CharField()
     longDescription = serializers.CharField()
     breedId = serializers.IntegerField()
 

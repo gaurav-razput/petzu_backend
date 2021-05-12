@@ -7,12 +7,12 @@ from rest_framework import status
 
 #List all Pet, or create a new pet.
 class PetList(APIView):
-
     def get(self, request, format=None):
         pet = Pet.objects.all()
         serializer = PetSerializer(pet, many=True)
         return Response(serializer.data)
 
+class AddPet(APIView):
     def post(self, request, format=None):
         serializer = PetSerializer(data=request.data)
         if serializer.is_valid():

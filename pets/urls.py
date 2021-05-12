@@ -4,6 +4,7 @@ from pets import views
 
 urlpatterns = [
     path('', views.PetList.as_view()),
+    path('create/',views.AddPet.as_view()),
     path('<int:pk>/', views.PetViewDetails.as_view()),
 ]
 

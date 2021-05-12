@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('checkserver/', index, name='index'),
     path('auth/',include('authentication.urls')),
-    path('pets/',include('pets.urls'))
+    path('pets/',include('pets.urls')),
+    path('login/',include('login_page.urls'))
     ]
